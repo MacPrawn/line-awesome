@@ -1,19 +1,21 @@
-@font-face {
-  font-family: $la-font-name-lab;
-  font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: url('#{$la-font-path}/la-brands-400.eot');
-  src: url("#{$la-font-path}/la-brands-400.eot?#iefix") format("embedded-opentype"),
-  url("#{$la-font-path}/la-brands-400.woff2") format("woff2"),
-  url("#{$la-font-path}/la-brands-400.woff") format("woff"),
-  url("#{$la-font-path}/la-brands-400.ttf") format("truetype"),
-  url("#{$la-font-path}/la-brands-400.svg#lineawesome") format("svg");
-}
+@if $la-css-prefix-lab {
+  @font-face {
+    font-family: $la-font-name-lab;
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('#{$la-font-path}/la-brands-400.eot');
+    src: url("#{$la-font-path}/la-brands-400.eot?#iefix") format("embedded-opentype"),
+    url("#{$la-font-path}/la-brands-400.woff2") format("woff2"),
+    url("#{$la-font-path}/la-brands-400.woff") format("woff"),
+    url("#{$la-font-path}/la-brands-400.ttf") format("truetype"),
+    url("#{$la-font-path}/la-brands-400.svg#lineawesome") format("svg");
+  }
 
-.#{$la-css-prefix-lab} {
-  font-family: $la-font-name-lab;
-  font-weight: 400;
+  .#{$la-css-prefix-lab} {
+    font-family: $la-font-name-lab;
+    font-weight: 400;
+  }
 }
 
 @font-face {
